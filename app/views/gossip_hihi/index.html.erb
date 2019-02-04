@@ -1,0 +1,21 @@
+<h1>Gossip hihihihih</h1>
+
+<div class="card" style="width: 18rem; background-color: #091245; margin-left: 20px; text-align: center; color: red;">
+  <div class="card-body">
+    <h5 class="card-title">Potin</h5>
+    <p class="card-text">
+<p>Voici le potin numéro <%= params[:id] %> que tu veux regarder petite zoulette:</p>
+<p>Titre du Gossip : <%= @gossips[params[:id].to_i].title %> </p>
+<p>Content du Gossip : <%= @gossips[params[:id].to_i].content %> </p>
+<p>Prénom de l'auteur: <%= @users[params[:id].to_i].first_name %> </p>
+<p>Nom de l'auteur : <%= @users[params[:id].to_i].last_name %> </p>
+<p>Description de l'auteur : <%= @users[params[:id].to_i].description %> </p>
+<p>Email de l'auteur : <%= @users[params[:id].to_i].email %> </p>
+<p>Age de l'auteur : <%= @users[params[:id].to_i].age %> </p>
+<p>Date de création : <%= @gossips[params[:id].to_i].created_at %> </p>
+
+<a href="http://localhost:3000/author/ <%= params[:id] %>"> Page de l'auteur</a><br><br>
+<a href="http://localhost:3000/">Retour à la case départ</a>
+	</p>
+  </div>
+</div>
