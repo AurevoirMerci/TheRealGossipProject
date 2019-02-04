@@ -1,0 +1,18 @@
+<h1>Bienvenue à bord</h1>
+<p>Tu veux des potins ? Tu veux des ragots ? TU VEUX DU SALE !?</p>
+<p> Découvrez les super potins, le 4ème va vous surprendre! </p>
+
+<% @gossips.each do |ou| %> 
+
+<div class="card" style="width: 18rem; background-color: #285939; margin-left: 20px; text-align: center; color: yellow;">
+  <div class="card-body">
+    <h5 class="card-title">Potin</h5>
+    <p class="card-text">
+    <%= ou.title %> 
+	<%= " : " %>
+	</p>
+    <a href="http://localhost:3000/gossip/<%= @gossips.index(ou)%>">Voir potin</a>
+  </div>
+</div>
+
+<% end %>

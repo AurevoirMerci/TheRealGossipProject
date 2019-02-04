@@ -1,0 +1,17 @@
+<h1>AuthorHihi</h1>
+
+<div class="card" style="width: 18rem; background-color: #091245; margin-left: 20px; text-align: center; color: red;">
+  <div class="card-body">
+    <h5 class="card-title">Potin</h5>
+    <p class="card-text">
+<p>Voici l'auteur du potin numéro <%= params[:id] %></p>
+
+<p>Prénom de l'auteur: <%= @users[params[:id].to_i].first_name %> </p>
+<p>Nom de l'auteur : <%= @users[params[:id].to_i].last_name %> </p>
+<p>Description de l'auteur : <%= @users[params[:id].to_i].description %> </p>
+<p>Email de l'auteur : <%= @users[params[:id].to_i].email %> </p>
+<p>Age de l'auteur : <%= @users[params[:id].to_i].age %> </p>
+<a href="http://localhost:3000/">Retour à la case départ</a>
+	</p>
+  </div>
+</div>

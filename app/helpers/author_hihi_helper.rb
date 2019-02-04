@@ -1,0 +1,2 @@
+module AuthorHihiHelper
+end

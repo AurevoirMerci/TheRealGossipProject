@@ -1,0 +1,2 @@
+module GossipHihiHelper
+end
