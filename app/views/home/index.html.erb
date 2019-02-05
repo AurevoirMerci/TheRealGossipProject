@@ -10,6 +10,7 @@
     <p class="card-text">
     <%= ou.title %> 
 	<%= " : " %>
+	<%= User.find(ou.user_id).first_name %>
 	</p>
     <a href="http://localhost:3000/gossip/<%= @gossips.index(ou)%>">Voir potin</a>
   </div>
