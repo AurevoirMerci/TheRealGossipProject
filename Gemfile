@@ -65,3 +65,4 @@ gem 'faker'
 gem "table_print"
 gem 'rspec-rails'
 gem 'bootstrap'
+gem "bootstrap", ">= 4.3.1"
